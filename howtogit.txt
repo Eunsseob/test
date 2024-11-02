@@ -1,0 +1,42 @@
+깃 먼저
+
+하나의 버전을 
+
+버전이란 ? 게임이라 생각하면 편함
+
+하나의 버전을 되어 
+협업하기 
+되돌리기 
+효율적으로 백업하기
+
+## 세 개의 공간
+working directory
+- 내가 코드작업을 하는 공간
+
+staging area
+- 버전이 될 후보들이 올라오는 공간
+
+repository
+- 저장소
+
+Git 명령어를 쓴다.
+
+git add -> 하나의 추가
+git commit -> 하나의 버전
+git status -> 현재(폴더) 상태를 려줘
+ls -al -> (숨긴 파일/폴더까지 포함한) 모든파일/폴더 목록 보기
+폴더 만들고
+test.txt. <임의의 문자열을 만듬> 오른쪽 git bash here이 보임
+git add . -> 폴더의 모든 파일에 스테이징 에리어에 넣어라
+git commit -m "사용할 메세지" -> 주석처리
+git log -> 메시지 보여줌
+git commit -am "commit message" -> add와 commit 동시에 하기
+git commit 이 어떻게 협업이 되나? 
+
+-------------------------------------
+git 할수 있는 것들
+코드저장, 과거조회, 되돌리기, 협업
+git reset => 되돌리자
+git reset --hard HEAD^ -> 수정한 것 까지 통째로 (^ 갯수로 최근 커밋한 것을 돌릴 수 있다.)
+git reset --mixed HEAD^ -> add 한 것 까지
+git reset --soft HEAD^ -> commit 한 것만
